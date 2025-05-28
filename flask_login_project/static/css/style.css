@@ -1,0 +1,184 @@
+/* Reset & basics */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: url("../images/IMG_2206.PNG") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    width: 350px;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.login-form h2 {
+    color: #00fff7;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #00fff7;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    background: #222;
+    box-shadow: 0 0 8px #00fff7;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    color: #00fff7;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #00fff7;
+}
+
+.remember-forgot a {
+    color: #00fff7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.remember-forgot a:hover {
+    color: #33ffff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00fff7;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #33ffff;
+    box-shadow: 0 0 12px #00fff7;
+}
+
+.flash-messages {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.flash-messages li.success {
+    color: #0f0;
+}
+
+.flash-messages li.error {
+    color: #f00;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.forgot-password-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    width: 350px;
+    margin: 100px auto;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.forgot-password-form h2 {
+    color: #00fff7;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.forgot-password-form input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #00fff7;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.forgot-password-form input[type="email"]:focus {
+    background: #222;
+    box-shadow: 0 0 8px #00fff7;
+}
+
+.forgot-password-form button {
+    width: 100%;
+    padding: 12px;
+    background: #00fff7;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forgot-password-form button:hover {
+    background: #33ffff;
+    box-shadow: 0 0 12px #00fff7;
+}
+
+.back-to-login {
+    display: block;
+    margin-top: 15px;
+    color: #00fff7;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-to-login:hover {
+    color: #33ffff;
+}
