@@ -1,0 +1,14 @@
+this is how folders need to be 
+
+
+
+flask_login_project/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/   #in here you can put your background image
+│   └── js/
+├── templates/
+│   ├── forgot_password.html
+│   └── login.html
+└── app.py
